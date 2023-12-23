@@ -34,7 +34,7 @@ int main() {
 
     for (int i = 0; i < num_tests; i++) {
         const struct record* result = lookup_naive(data, tests[i].lon, tests[i].lat);
-        const char* result_name = result ? result->name : "Godt forsøg men nej";
+        const char* result_name = result ? result->name : "Not Found";
         printf("Test %d: Expected: %s, Result: %s\n", 
                i + 1, tests[i].expected_name, result_name);
     }

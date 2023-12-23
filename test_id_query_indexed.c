@@ -35,8 +35,8 @@ int main() {
 
         printf("Test %d: Query ID %ld, Expected: %s, Result: %s - %s\n",
                i + 1, tests[i].query_id,
-               tests[i].expected_name ? tests[i].expected_name : "Godt forsøg men nej",
-               result ? result->name : "Godt forsøg men nej",
+               tests[i].expected_name ? tests[i].expected_name : "Not Found",
+               result ? result->name : "Not Found",
                passed ? "PASSED" : "FAILED");
     }
 
